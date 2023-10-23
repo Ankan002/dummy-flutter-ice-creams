@@ -1,0 +1,132 @@
+{
+  "ice_creams": [
+    {
+      "flavour": "Vanilla",
+      "description": "Classic vanilla ice cream made with Madagascar vanilla beans.",
+      "toppings": ["Chocolate sauce", "Sprinkles", "Whipped cream"],
+      "price": 4.99,
+      "image": "https://images.unsplash.com/photo-1677896263326-18a6681eb9dd?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2835g",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Granulated sugar", "quantity": "3/4 cup"},
+        {"name": "Madagascar vanilla beans", "quantity": "2 pods"}
+      ]
+    },
+    {
+      "flavour": "Chocolate Fudge",
+      "description": "Rich chocolate ice cream with swirls of gooey fudge.",
+      "toppings": ["Fudge sauce", "Chopped nuts", "Chocolate chips"],
+      "price": 5.99,
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2303",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Cocoa powder", "quantity": "1/2 cup"},
+        {"name": "Granulated sugar", "quantity": "3/4 cup"}
+      ]
+    },
+    {
+      "flavour": "Strawberry Swirl",
+      "description": "Sweet strawberry ice cream with ribbons of strawberry puree.",
+      "toppings": ["Fresh strawberries", "Strawberry sauce", "Mint leaves"],
+      "price": 6.49,
+      "image": "https://images.unsplash.com/photo-1677012381128-160efe193fda?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2787",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Fresh strawberries", "quantity": "1 cup, chopped"},
+        {"name": "Granulated sugar", "quantity": "3/4 cup"}
+      ]
+    },
+    {
+      "flavour": "Mint Chocolate Chip",
+      "description": "Refreshing mint ice cream with chunks of chocolate.",
+      "toppings": ["Chocolate shavings", "Mint leaves"],
+      "price": 5.99,
+      "image": "https://images.unsplash.com/photo-1675460518267-3913f949f4ec?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2835",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Mint extract", "quantity": "1 tsp"},
+        {"name": "Chocolate chips", "quantity": "1/2 cup"}
+      ]
+    },
+    {
+      "flavour": "Cookies and Cream",
+      "description": "Creamy vanilla ice cream with chunks of chocolate cookies.",
+      "toppings": ["Crushed cookies", "Chocolate sauce"],
+      "price": 5.49,
+      "image": "https://images.unsplash.com/photo-1676905188691-dca3aa1b99d7?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2864",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Chocolate cookies", "quantity": "1 cup, crushed"}
+      ]
+    },
+    {
+      "flavour": "Vanilla",
+      "description": "Classic vanilla ice cream made with Madagascar vanilla beans.",
+      "toppings": ["Chocolate sauce", "Sprinkles", "Whipped cream"],
+      "price": 4.99,
+      "image": "https://images.unsplash.com/photo-1677896263326-18a6681eb9dd?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2835g",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Granulated sugar", "quantity": "3/4 cup"},
+        {"name": "Madagascar vanilla beans", "quantity": "2 pods"}
+      ]
+    },
+    {
+      "flavour": "Chocolate Fudge",
+      "description": "Rich chocolate ice cream with swirls of gooey fudge.",
+      "toppings": ["Fudge sauce", "Chopped nuts", "Chocolate chips"],
+      "price": 5.99,
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2303",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Cocoa powder", "quantity": "1/2 cup"},
+        {"name": "Granulated sugar", "quantity": "3/4 cup"}
+      ]
+    },
+    {
+      "flavour": "Strawberry Swirl",
+      "description": "Sweet strawberry ice cream with ribbons of strawberry puree.",
+      "toppings": ["Fresh strawberries", "Strawberry sauce", "Mint leaves"],
+      "price": 6.49,
+      "image": "https://images.unsplash.com/photo-1677012381128-160efe193fda?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2787",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Fresh strawberries", "quantity": "1 cup, chopped"},
+        {"name": "Granulated sugar", "quantity": "3/4 cup"}
+      ]
+    },
+    {
+      "flavour": "Mint Chocolate Chip",
+      "description": "Refreshing mint ice cream with chunks of chocolate.",
+      "toppings": ["Chocolate shavings", "Mint leaves"],
+      "price": 5.99,
+      "image": "https://images.unsplash.com/photo-1675460518267-3913f949f4ec?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2835",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Mint extract", "quantity": "1 tsp"},
+        {"name": "Chocolate chips", "quantity": "1/2 cup"}
+      ]
+    },
+    {
+      "flavour": "Cookies and Cream Deserted",
+      "description": "Creamy vanilla ice cream with chunks of chocolate cookies.",
+      "toppings": ["Crushed cookies", "Chocolate sauce"],
+      "price": 5.49,
+      "image": "https://images.unsplash.com/photo-1676905188691-dca3aa1b99d7?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2864",
+      "ingredients": [
+        {"name": "Heavy cream", "quantity": "1 cup"},
+        {"name": "Whole milk", "quantity": "1 cup"},
+        {"name": "Chocolate cookies", "quantity": "1 cup, crushed"}
+      ]
+    }
+  ]
+}
