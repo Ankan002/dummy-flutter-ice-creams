@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ice_creams/models/ice_cream_model.dart';
+import 'package:ice_creams/utils/list_utility.dart';
 import 'package:ice_creams/utils/overlay_utility.dart';
 import 'package:ice_creams/widgets/section_heading.dart';
 
@@ -118,6 +119,37 @@ class IceCreamDetailsScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               const SectionHeading(title: "Toppings"),
+              SizedBox(
+                height: 50,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                  ),
+                  child: ListView.builder(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (listContext, index) => Padding(
+                      padding: ListUtility.getHorizontalPaddingEdgeInsets(
+                        totalLength: iceCream.toppings?.length ?? 0,
+                        currentIndex: index,
+                        padding: 10.0,
+                      ),
+                      child: Chip(
+                        label: Text(
+                          iceCream.toppings?[index] ?? "",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontFamily: GoogleFonts.quicksand().fontFamily,
+                          ),
+                        ),
+                        backgroundColor: Colors.deepOrange,
+                      ),
+                    ),
+                    itemCount: iceCream.toppings?.length,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
