@@ -31,7 +31,8 @@ class IceCreamDetailsScreen extends StatelessWidget {
           centerTitle: true,
           elevation: 0,
         ),
-        body: SingleChildScrollView(
+        body: SafeArea(
+          bottom: true,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -114,40 +115,58 @@ class IceCreamDetailsScreen extends StatelessWidget {
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
                     fontFamily: GoogleFonts.quicksand().fontFamily,
+                    color: Colors.deepOrange,
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               const SectionHeading(title: "Toppings"),
               SizedBox(
                 height: 50,
-                child: Padding(
+                child: ListView.builder(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 10,
                   ),
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (listContext, index) => Padding(
-                      padding: ListUtility.getHorizontalPaddingEdgeInsets(
-                        totalLength: iceCream.toppings?.length ?? 0,
-                        currentIndex: index,
-                        padding: 10.0,
-                      ),
-                      child: Chip(
-                        label: Text(
-                          iceCream.toppings?[index] ?? "",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontFamily: GoogleFonts.quicksand().fontFamily,
-                          ),
-                        ),
-                        backgroundColor: Colors.deepOrange,
-                      ),
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (listContext, index) => Padding(
+                    padding: ListUtility.getHorizontalPaddingEdgeInsets(
+                      totalLength: iceCream.toppings?.length ?? 0,
+                      currentIndex: index,
+                      padding: 10.0,
                     ),
-                    itemCount: iceCream.toppings?.length,
+                    child: Chip(
+                      label: Text(
+                        iceCream.toppings?[index] ?? "",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontFamily: GoogleFonts.quicksand().fontFamily,
+                        ),
+                      ),
+                      backgroundColor: Colors.deepOrange,
+                    ),
                   ),
+                  itemCount: iceCream.toppings?.length,
+                ),
+              ),
+              const SizedBox(height: 5),
+              const SectionHeading(title: "Ingredients"),
+              Expanded(
+                child: ListView.builder(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                  ),
+                  shrinkWrap: true,
+                  scrollDirection: Axis.vertical,
+                  itemBuilder: (ingredientsContext, index) => Card(
+                    child: ListTile(
+                      title: Text(iceCream.ingredients[index].name),
+                      subtitle:
+                          Text("Qty - ${iceCream.ingredients[index].quantity}"),
+                    ),
+                  ),
+                  itemCount: iceCream.ingredients.length,
                 ),
               ),
             ],
