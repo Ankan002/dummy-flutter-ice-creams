@@ -21,11 +21,15 @@ class IceCreamCard extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          CachedNetworkImage(
-            imageUrl: iceCream.image ?? "",
-            fit: BoxFit.cover,
-            color: Colors.orange.withOpacity(0.5),
-            colorBlendMode: BlendMode.color,
+          Hero(
+            tag: iceCream.image ?? "",
+            child: CachedNetworkImage(
+              imageUrl: iceCream.image ?? "",
+              fit: BoxFit.cover,
+              color: Colors.orange.withOpacity(0.5),
+              colorBlendMode: BlendMode.color,
+              cacheKey: iceCream.image,
+            ),
           ),
           Align(
             alignment: Alignment.bottomLeft,
